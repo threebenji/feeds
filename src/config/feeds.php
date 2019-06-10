@@ -101,5 +101,7 @@ return [
     'curl.options'             => null,
 
     'curl.timeout' => null,
+    
+    'curl.useragent' => 'SimplePie/1.5.2 (Feed Parser; http://simplepie.org; Allow like Gecko) Build/20190610',
 
 ];
