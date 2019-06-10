@@ -62,7 +62,11 @@ class FeedsFactory
         if (isset($this->config['curl.timeout']) && is_int($this->config['curl.timeout'])) {
             $this->simplePie->set_timeout($this->config['curl.timeout']);
         }
-
+        
+        if (isset($this->config['curl.useragent'])) {
+            $this->simplePie->set_useragent($this->config['curl.useragent']);
+        }
+        
         if (isset($options) && is_array($options)) {
             if (isset($options['curl.options']) && is_array($options['curl.options'])) {
                 $this->simplePie->set_curl_options($this->simplePie->curl_options + $options['curl.options']);
