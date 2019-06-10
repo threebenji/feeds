@@ -16,16 +16,16 @@
     },
     "autoload": {
         "psr-4": {
-            "willvincent\\Feeds\\": "src/"
+            "threebenji\\Feeds\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "willvincent\\Feeds\\FeedsServiceProvider"
+                "threebenji\\Feeds\\FeedsServiceProvider"
             ],
             "aliases": {
-                "Feeds": "willvincent\\Feeds\\Facades\\FeedsFacade"
+                "Feeds": "threebenji\\Feeds\\Facades\\FeedsFacade"
             }
         }
     }
