@@ -1,4 +1,4 @@
-<?php namespace willvincent\Feeds;
+<?php namespace threebenji\Feeds;
 
 use Illuminate\Support\ServiceProvider;
 
