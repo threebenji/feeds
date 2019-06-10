@@ -16,7 +16,7 @@ The Laravel 5 Feeds Service Provider can be installed via [Composer](http://getc
 ```json
 {
     "require": {
-        "willvincent/feeds": "1.1.*"
+        "threebenji/feeds": "1.1.*"
     }
 }
 ```
@@ -32,7 +32,7 @@ Find the `providers` key in your `config/app.php` and register the Service Provi
 ```php
     'providers' => [
         // ...
-        willvincent\Feeds\FeedsServiceProvider::class,
+        threebenji\Feeds\FeedsServiceProvider::class,
     ],
 ```
 
@@ -40,13 +40,13 @@ Find the `aliases` key in your `config/app.php` and register the Facade.
 ```php
     'aliases' => [
         // ...
-        'Feeds'    => willvincent\Feeds\Facades\FeedsFacade::class,
+        'Feeds'    => threebenji\Feeds\Facades\FeedsFacade::class,
     ],
 ```
 
 ## Usage
 
-Run `php artisan vendor:publish --provider="willvincent\Feeds\FeedsServiceProvider"` to publish the default config file, edit caching setting withing the resulting `config/feeds.php` file as desired.
+Run `php artisan vendor:publish --provider="threebenji\Feeds\FeedsServiceProvider"` to publish the default config file, edit caching setting withing the resulting `config/feeds.php` file as desired.
 
 See [SimplePie Documentation](http://simplepie.org/wiki/) for full API usage documentation.
 
